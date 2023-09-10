@@ -1,0 +1,18 @@
+h1{
+    text-align: center; 
+    color: brown;
+}
+#test{
+    font-style: italic;
+    color: chartreuse;
+}
+p{
+    color: brown;
+    
+}
+.vip{
+        color: blueviolet;
+    }
+.super_vip{
+    color: black;
+}    
