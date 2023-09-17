@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .first{
+            width: auto;
+        }
+        .first>div{
+            background-color: yellow;
+            width: 200px;
+             border: solid blue 1px; 
+             position: relative; 
+             cursor: pointer;
+             float:left
+        }
+        .second{
+            width: 150px; 
+            display: none
+        }
+        .second>div{
+            background-color: cyan;
+             border: solid blue 1px; 
+             cursor: pointer
+        }
+        .first>div:hover div.second{
+            display: block; 
+            position: absolute;
+            left: 30%; top: 90%; z-index: 1
+        }
+
+        @media screen and (max-device-width:1030px) {
+         
+            .first>div{
+            background-color: yellow;
+            width: 200px;
+            height: 20px;
+             border: solid blue 1px; 
+             position: relative; 
+             cursor: pointer;
+             float: none;
+        }
+        .second{
+            width: 150px; 
+            display: none
+        }
+        .first>div:hover div.second{
+            display: block; 
+            position: absolute;
+            left: 90%; top: 50%; z-index: 1
+        }
+           
+            
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="first">
+        <div >понедельник
+            <div class="second">
+                <div>утро</div>
+                <div>день</div>
+                <div>ночь</div>
+            </div>
+            
+        </div>
+        <div >вторник
+            <div class="second">
+                <div>утро</div>
+                <div>день</div>
+                <div>ночь</div>
+            </div>
+        </div>
+        <div >среда
+            <div class="second">
+                <div>утро</div>
+                <div>день</div>
+                <div>ночь</div>
+            </div>
+        </div>
+        <div >четверг
+            <div class="second">
+                <div>утро</div>
+                <div>день</div>
+                <div>ночь</div>
+            </div>
+        </div>
+        <div >пятница
+            <div class="second">
+                <div>утро</div>
+                <div>день</div>
+                <div>ночь</div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
