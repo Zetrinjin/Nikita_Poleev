@@ -4,8 +4,148 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        p:nth-child(1) em:nth-child(1) a{
+            color: gray;
+        }
+        ul:nth-child(2) li:first-child a:first-child{
+            color: orange;
+        }
+        ul:nth-child(2) li:first-child span:nth-child(3) a:nth-child(1){
+            color: rosybrown;
+        }
+        ul:nth-child(2) li:first-child em:nth-child(5) a:nth-child(1){
+            color: violet;
+        }
+        ul:nth-child(2) li:nth-child(2) a:nth-child(1){
+            color: aqua;
+        }
+        ul:nth-child(2) li:nth-child(3) div p:first-child a{
+            color: white;
+            background-color: black;
+        }
+        
+        ul:nth-child(2) li:nth-child(3) div ul:nth-child(2) li a{
+            color: indigo; 
+        }
+        ul:nth-child(2) li:nth-child(3) div  li:nth-child(2) em a{
+            color: chocolate; 
+        }
+        
+        ul:nth-child(2) li:nth-child(3) div  li:nth-child(3) span a{
+            color: brown; 
+        }
+        
+        div:nth-child(3)  ul:first-child li:first-child a{
+            color: red;
+        }
+        div:nth-child(3)  ul:first-child li:nth-child(2) span a{
+            color: green;
+        }
+        div:nth-child(3)  ul:first-child li:nth-child(3) em a{
+            color: blue;
+        }
+        div:nth-child(3)  p:nth-child(2) em a{
+            color: yellow;
+        }
+        div:nth-child(3)  span:nth-child(3) em a{
+            color: black;
+        }
+
+        
+    </style>
 </head>
 <body>
-    
+
+    <p>
+        <em><a href="#">gray</a></em>
+    </p>
+
+    <ul>
+        <li> <a href="#">orange</a> <br>
+
+            <span>
+                <a href="#">rose</a>
+            </span>
+            <br>
+
+            <em><a href="#">violet</a></em>
+        </li>
+
+        <li>
+            <p>
+                <em>
+                    <a href="#">aqua</a>
+                </em>
+            </p>
+
+        </li>
+
+        <li>
+            <div>
+
+                <p>
+                    <a href="#">white</a>
+                </p>
+                
+
+                <ul>
+
+                    <li><a href="#">indigo</a></li>
+
+                    <li>
+                        <em>
+                            <a href="#">chocolate</a>
+                        </em>
+                    </li>
+
+                    <li>
+                        <span>
+                            <a href="#">brown</a>
+                        </span>
+                    </li>
+                </ul>
+
+                
+
+                
+
+                
+            </div>
+        </li>
+    </ul>
+
+    <div>
+        <ul>
+            <li>
+                <a href="#">red</a>
+            </li>
+
+            <li>
+                <span>
+                    <a href="#">green</a>
+                </span>
+            </li>
+
+            <li>
+                <em>
+                    <a href="#">blue</a>
+                </em>
+            </li>
+        </ul>
+
+        <p>
+            <em>
+                <a href="#">yellow</a>
+            </em>
+        </p>
+
+        <span>
+            <em>
+                <a href="#">black</a>
+            </em>
+        </span>
+    </div>
 </body>
 </html>

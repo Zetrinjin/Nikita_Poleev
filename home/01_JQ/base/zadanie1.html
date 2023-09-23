@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        tr:nth-child(1){
+            background-color: gray;
+            text-decoration-color: black;
+            
+        }
+        th:first-child{
+            width: auto;
+        }
+        td:not( :last-child ){
+            border: 1px;
+            border-bottom-style:dotted ;
+            border-right-style: dotted;
+        }
+        td:first-child{
+            font-weight: bold;
+        }
+        td:last-child{
+            border: 1px;
+            border-bottom-style:dotted ;
+        }
+        tr:hover{
+            background-color: orange;
+        }
+        p{
+            margin-left: 150px;
+            margin-top: 0px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    
+    <Table id="table_data" >
+        <tr>
+            <th > ФИО</th>
+            <th>пол</th>
+            <th>должность</th>
+            <th>дата рож.</th>
+            <th>Данные 01</th>
+            <th>Данные 02</th>
+        </tr>
+        <tr id="inf">
+            <td >Иванов Иван Иванович</td>
+            <td>М</td>
+            <td>начальник</td>
+            <td>01.01.1960</td>
+            <td>4567</td>
+            <td>3453</td>
+        </tr>
+        <tr id="inf1">
+            <td >Петрова Илонна Петровна</td>
+            <td>Ж</td>
+            <td>секретарь</td>
+            <td>01.01.1989</td>
+            <td>98795</td>
+            <td>46523</td>
+        </tr>
+        <tr id="inf2">
+            <td >Сидоров Илья Игоревич</td>
+            <td>М</td>
+            <td>бухгалтер</td>
+            <td>01.01.1979</td>
+            <td>74323434</td>
+            <td>9232379</td>
+        </tr>
+        <tr id="inf3">
+            <td >Крупин Сергей Иванович</td>
+            <td>М</td>
+            <td>водитель 2</td>
+            <td>01.01.1983</td>
+            <td>3234534</td>
+            <td>923123379</td>
+        </tr>
+    </Table>
+    <p>ДАННЫЕ О СОТРУДНИКАХ</p>
+
+    <input type="button" id="hideshow" value="показать таблицу">
+
+
+ <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous">
+</script>
+
+<script>
+    $(document).ready(function(){
+        $('#inf').click(function(){
+        if($('#inf').is(':visible'))
+        {
+            $('#inf').hide();
+        }
+        
+
+    })
+    $('#inf1').click(function(){
+        if($('#inf1').is(':visible'))
+        {
+            $('#inf1').hide();
+        }
+   
+    })
+
+    $('#inf2').click(function(){
+        if($('#inf2').is(':visible'))
+        {
+            $('#inf2').hide();
+        }
+
+    })
+
+    $('#inf3').click(function(){
+        if($('#inf3').is(':visible'))
+        {
+            $('#inf3').hide();
+        }
+
+    })
+
+
+    })
+   
+</script>
+
+<!-- <script>
+      $(document).ready(function(){
+        $('#inf1').click(function(){
+        if($('#inf1').is(':visible'))
+        {
+            $('#inf1').hide();
+        }
+
+    })
+})
+
+</script>
+
+<script>
+       $(document).ready(function(){
+        $('#inf2').click(function(){
+        if($('#inf2').is(':visible'))
+        {
+            $('#inf2').hide();
+        }
+
+    })
+})
+
+</script>
+
+<script>
+     $(document).ready(function(){
+        $('#inf3').click(function(){
+        if($('#inf3').is(':visible'))
+        {
+            $('#inf3').hide();
+        }
+
+    })
+})
+
+</script> -->
+
+  <script>
+   $('#hideshow').click(function(){
+	
+		$('#inf').show();
+        $('#inf1').show();
+        $('#inf2').show();
+        $('#inf3').show();
+	
+});
+  </script>
+</body>
+</html>
